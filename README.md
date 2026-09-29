@@ -26,7 +26,7 @@ cd cosmic-term-persian-arabic
 ./install.sh
 ```
 
-The script downloads the cosmic-term source, applies the patch, builds it and puts the result in `~/.local/bin/cosmic-term`. The first build takes a few minutes and about 2 GB of disk space in `build/`. Open a new terminal window afterwards.
+The script downloads the cosmic-term source, applies the patch, builds it and puts the result in `~/.local/bin/cosmic-term`. The build takes a few minutes and needs about 2 GB of free disk space while it runs. That space is freed again when the script is done. Open a new terminal window afterwards.
 
 Run `./install.sh` again after a system update of cosmic-term.
 
@@ -44,6 +44,8 @@ The terminal that came with the system is never changed.
 |---|---|
 | `COSMIC_TERM_BIDI_AUTODETECT=0` | every line left to right, as before |
 | `COSMIC_TERM_BIDI_LTR_WORDS=8` | change the limit of 5 English words |
+
+For the install script: `KEEP_BUILD=1 ./install.sh` keeps the build output, which makes the next build much faster.
 
 ## Notes
 

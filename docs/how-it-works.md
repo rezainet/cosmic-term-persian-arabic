@@ -37,7 +37,7 @@ The text engine swaps `(` and `)` in right-to-left runs. Menlo and the fonts mad
 
 ## Tests
 
-`src/bidi.rs` has 11 tests. Some of them lay out real lines with cosmic-text and check that every column is found again from the position of its glyph.
+`src/bidi.rs` has 11 tests. Run `KEEP_BUILD=1 ./install.sh` once so the patched source and its build output are there. Some of them lay out real lines with cosmic-text and check that every column is found again from the position of its glyph.
 
 ```bash
 cd build/cosmic-term

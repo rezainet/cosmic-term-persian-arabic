@@ -66,6 +66,12 @@ install -D -m755 -s target/release/cosmic-term "$out.new"
 mv -f "$out.new" "$out"
 echo "installed: $out"
 
+# The build output is about 2 GB and only speeds up the next build.
+# Run with KEEP_BUILD=1 to keep it.
+if [ "${KEEP_BUILD:-0}" != "1" ]; then
+    rm -rf "$src/target"
+fi
+
 found="$(command -v cosmic-term || true)"
 if [ "$found" != "$out" ]; then
     echo "note: 'cosmic-term' still starts ${found:-nothing}."
