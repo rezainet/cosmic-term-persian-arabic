@@ -2,7 +2,7 @@
 
 ## Where the problem comes from
 
-cosmic-term builds the text of each line in `Terminal::update()` and puts U+2066 (left-to-right isolate) in front of it. That was added on purpose in pull request 38, because right-aligned lines look wrong for normal shell output. The side effect is that a Persian sentence is treated as left-to-right text with some right-to-left words in it. Issue 221 asks for the opposite behaviour and was closed with the note that a way to choose the direction would come later.
+cosmic-term builds the text of each line in `Terminal::update()` and puts U+2066 (left-to-right isolate) in front of it. That was added on purpose in [pull request 38](https://github.com/pop-os/cosmic-term/pull/38), because right-aligned lines look wrong for normal shell output. The side effect is that a Persian sentence is treated as left-to-right text with some right-to-left words in it. [Issue 221](https://github.com/pop-os/cosmic-term/issues/221) asks for the opposite behaviour and was closed with the note that a way to choose the direction would come later.
 
 ## Choosing the direction of a line
 

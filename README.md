@@ -54,6 +54,7 @@ For the install script: `KEEP_BUILD=1 ./install.sh` keeps the build output, whic
 - `main()` after Persian text shows as `()main`. That is how the Unicode rules order it, and other terminals do the same.
 - The window for input methods (IBus, Fcitx) is not placed correctly on mirrored lines yet. A normal Persian keyboard layout is not affected.
 - I wrote this with the help of an AI assistant and tested it on my own machine.
+- [cosmic-term](https://github.com/pop-os/cosmic-term) is made by System76. This is not an official part of it. The behaviour changed here is discussed in their [issue 221](https://github.com/pop-os/cosmic-term/issues/221) and [pull request 38](https://github.com/pop-os/cosmic-term/pull/38).
 - How it works inside: [docs/how-it-works.md](docs/how-it-works.md)
 
 ## License
